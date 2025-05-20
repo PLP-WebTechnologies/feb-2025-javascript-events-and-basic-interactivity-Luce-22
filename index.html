@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 7 Assignment 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1><table>THIS IS MY WEEK 7 :)</table></h1>
+
+    <!-- Event Handling -->
+    <section class="card">
+      <h2>🎈 Event Handling</h2>
+      <button id="magicBtn" class="fun-btn">✨ This is a fun button</button>
+      <p class="tip">Something fun should happen if you hover, click, or double-click it ;) </p>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section class="card">
+      <h2>🎮 Interactive Elements</h2>
+      <p class="tip">One fun button wasn't enough! Click, hover or double-click the ones below to see some magic tricks! </p>
+      <button id="colorBtn" class="fun-btn">🌈 Change Color</button>
+      <p class="tip">Cool right? </p>
+
+     <div class="tabs">
+  <button class="tabBtn" data-tab="1">🎵 Music</button>
+  <button class="tabBtn" data-tab="2">🎬 Movies</button>
+</div>
+
+<!-- Tab 1: Music -->
+<div id="tabContent1" class="tabContent">
+  Fun fact: Listening to music can get you out of the funkiest of funks!
+  <div class="slideshow">
+    <img id="slideImg1" src="giphy.gif" alt="Slide" />
+    <button id="nextSlide1" class="fun-btn">➡️ Next</button>
+  </div>
+</div>
+
+<!-- Tab 2: Movies -->
+<div id="tabContent2" class="tabContent" style="display: none;">
+  Movies are amazing too! But between you and I, books take the cake ;)
+  <div class="slideshow">
+    <img id="slideImg2" src="200.webp" alt="Slide" />
+    <button id="nextSlide2" class="fun-btn"> Next</button>
+  </div>
+</div>
+
+    </section>
+
+    <!-- Form Validation -->
+    <section class="card">
+      <h2> Fill a Form :D</h2>
+      <form id="signupForm" novalidate>
+        <input type="text" id="username" placeholder="Username (required)" required />
+        <input type="email" id="email" placeholder="Email (required)" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit" class="fun-btn">🚀 Hurrah!</button>
+      </form>
+      <div id="feedback" aria-live="polite"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
